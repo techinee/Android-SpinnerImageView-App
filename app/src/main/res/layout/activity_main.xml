@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Country :"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/countryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#CDDC39"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="249dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="143dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/save_small" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="Picture :"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="#FFEB3B"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnView"
+            android:layout_width="301dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/view_small" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageShow"
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/ic_launcher_background" />
+</LinearLayout>
